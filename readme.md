@@ -8,10 +8,8 @@ Backup your listening history on a schedule. Available `JSON` and `CSV` formats.
 
 ```js
 function createBackup() {
-    lastfmbackup.init({
-        username: 'login',
-        apiKey: 'key',
-    });
-    lastfmbackup.createBackup({ json: true, csv: true });
+    lastfmbackup.init({ username: 'value', apiKey: 'value' });
+    lastfmbackup.saveHistory({ json: true, csv: true });
+    lastfmbackup.saveLoved({ json: true, csv: true });
 }
 ```
